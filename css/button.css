@@ -1,0 +1,39 @@
+button {
+    border: 0px;
+    outline: 0px;
+    padding: .5em;
+    margin: .5em;
+    border-radius: .5em;
+    transition: transform 50ms;
+
+    color: white;
+    cursor: pointer;
+}
+
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:disabled:active {
+    transform: scale(1.0);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+button.primary {
+    background-color: var(--primary-foreground);
+}
+
+button.destructive {
+    background-color: var(--danger);
+}
+
+button.secondary {
+    background: transparent;
+    border: 2px solid var(--primary-foreground);
+    color: black;
+}

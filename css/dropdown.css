@@ -1,0 +1,68 @@
+select {
+    background-color: var(--primary-foreground);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    padding: 0.5em;
+
+    transition: 0.1s background-color;
+}
+
+select {
+    width: fit-content;
+}
+
+select button {
+    display: flex;
+    column-gap: 0.5em;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 0.9rem;
+}
+
+select button::after {
+    content: "⏶";
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+select:hover {
+    background-color: #bdbdbd;
+}
+
+select, ::picker(select) {
+    appearance: base-select;
+}
+
+select::picker-icon {
+    display: none;
+}
+
+option {
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    color: black;
+    padding: 10px;
+
+    transition: 0.1s ease-in-out background-color;
+}
+
+option:hover {
+    background-color: var(--primary-foreground);
+}
+
+option:first-of-type {
+  border-radius: 0.5em 0.5em 0px 0px;
+}
+
+option:last-of-type {
+  border-radius: 0px 0px 0.5em 0.5em;
+}
+
+::picker(select) {
+  border-radius: 0.5em;
+  border: 1px solid #bdbdbd;
+}

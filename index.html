@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>frii.site CSS library</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/placeholder.css">
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/table.css">
+</head>
+<body class="modal">
+    <h1>friicss</h1>
+    <p>A super simple component library meant for making UIs inspired by frii.site's old design</p>
+
+    <p>Examples:</p>
+
+    <div style="display: flex; flex-direction: column; max-width: 200px; gap: 20px;">
+        <div style="display: flex; flex-direction: column;">
+            <button class="primary">Click me</button>
+            <button class="destructive">Dont click me</button>
+            <button disabled class="destructive">Cant click me</button>
+            <button class="secondary">Maybe click me</button>
+        </div>
+
+
+        <select id="picker">
+            <button><selectedcontent></selectedcontent></button>
+            <option>Strawberries</option>
+            <option>Blueberries</option>
+            <option>Apricots</option>
+        </select>
+
+        <div>
+            <label for="username">Username:</label>
+            <input id="username" placeholder="Username">
+        </div>
+
+        <div>
+            <label for="password">Password (disabled):</label>
+            <input disabled id="password" type="password" value="hello" placeholder="password">
+        </div>
+
+        <p>Placeholder:</p>
+        <div class="placeholder"></div>
+
+        <p>Loader:</p>
+        <div class="spinner"></div>
+
+        <button class="primary" command="show-modal" commandfor="modal-example">View modal</button>
+        <dialog id="modal-example">
+            <h1>hello everyone</h1>
+
+            <div class="options">
+                <button class="destructive" commandfor="modal-example" command="close">Delete account</button>
+                <button class="primary" commandfor="modal-example" command="close">Cancel</button>
+            </div>
+        </dialog>
+
+
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+
+        <table style="width: 500px">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                    <th>Another</th>
+                    <th>Third</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Something</td>
+                    <td>Something 2</td>
+                    <td>Something 3</td>
+                </tr>
+                <tr>
+                    <td>Something</td>
+                    <td>Something 2</td>
+                    <td>Something 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+table {
+    table-layout: fixed;
+    background-color: white;
+    border-collapse: collapse;
+    padding: 1em;
+}
+
+thead {
+    background-color: rgba(0,0,0, 0.05);
+}
+
+thead tr {
+    background-color: rgba(0,0,0, 0.1);
+}
+
+tbody tr {
+    background-color: rgba(0,0,0, 0.02);
+}
+
+th {
+    text-align: left;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+}
+
+td {
+    min-height: 2em;
+}

@@ -1,0 +1,9 @@
+* {
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-foreground: rgb(0,123,225);
+    --border-color: rgba(0, 0, 0, .05);
+    --danger: rgb(230, 15, 0);
+}

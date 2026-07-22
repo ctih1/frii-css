@@ -1,0 +1,21 @@
+.placeholder {
+    min-height: 20px;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: scrobbler;
+    animation-timing-function: linear;
+    background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+    background-size: 500% 100%;
+    overflow: hidden;
+    border-radius: 0.5em;
+}
+
+@keyframes scrobbler {
+    0% {
+        background-position: 50% 0;
+    }
+    100% {
+        background-position: -50% 0;
+    }
+}

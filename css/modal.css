@@ -1,0 +1,33 @@
+dialog::backdrop {
+    background-color: rgba(0,0,0, 0.5);
+}
+
+dialog {
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    position: relative;
+    max-width: 550px;
+    width: 85dvw;
+}
+
+dialog .options {
+    margin-top: auto;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+}
+
+dialog .options .destructive {
+    width: 35%;
+}
+
+dialog .options button {
+    width: 100%;
+}
+
+dialog h1 {
+    margin-top: 0px;
+}
