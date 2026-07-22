@@ -16,3 +16,6 @@ Source code for the demo is in index.html
 I recommend downloading the minified CSS and hosting it yourself as my server is kind of slow.
 
 https://cdn.ctih1.fi/out.min.css
+
+## If you dont want every element automatically styled
+Run `compile.py` and utilize `classes.css`, which requires every element to have the class "fs" in order to be styled. Note: this doesnt work with every element.
