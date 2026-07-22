@@ -1,5 +1,6 @@
-## frii-css
+## friicss
 pronounced "freaks" (**/friːks/**)
+
 CSS library that aims to mimic the look and feel of the old frii.site frontend
 
 ## Demo
