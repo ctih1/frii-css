@@ -12,82 +12,127 @@
     <link rel="stylesheet" href="/css/spinner.css">
     <link rel="stylesheet" href="/css/modal.css">
     <link rel="stylesheet" href="/css/table.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+
+    <!-- Google fonts icon imports -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=archive,code_xml,home" />
+
+    <script>
+        let darkMode = false;
+
+        function toggleDarkMode() {
+            if(darkMode) {
+                document.documentElement.classList.remove("dark");
+            } else {
+                document.documentElement.classList.add("dark");
+            }
+
+            darkMode = !darkMode;
+        }
+    </script>
 </head>
-<body class="modal">
-    <h1>friicss</h1>
-    <p>A super simple component library meant for making UIs inspired by frii.site's old design</p>
 
-    <p>Examples:</p>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">
+                <span class="material-symbols-outlined">home</span>
+                Home
+            </a></li>
+            <li><a href="https://github.com/ctih1/frii-css">
+                <span class="material-symbols-outlined">code_xml</span>
+                Source code
+            </a></li>
+            <li><a href="https://old.frii.site.archive.ctih1.fi">
+                <span class="material-symbols-outlined">archive</span>
+                frii.site archive
+            </a></li>
+            <li>
+                <button onclick="toggleDarkMode()" style="margin: 0px; padding: 4px;">Toggle dark/light mode</button>
+            </li>
+        </ul>
+    </nav>
+    <div class="card">
+        <h1>friicss</h1>
+        <p>A super simple component library meant for making UIs inspired by frii.site's old design</p>
 
-    <div style="display: flex; flex-direction: column; max-width: 200px; gap: 20px;">
-        <div style="display: flex; flex-direction: column;">
-            <button class="primary">Click me</button>
-            <button class="destructive">Dont click me</button>
-            <button disabled class="destructive">Cant click me</button>
-            <button class="secondary">Maybe click me</button>
-        </div>
+    </div>
 
 
-        <select id="picker">
-            <button><selectedcontent></selectedcontent></button>
-            <option>Strawberries</option>
-            <option>Blueberries</option>
-            <option>Apricots</option>
-        </select>
-
-        <div>
-            <label for="username">Username:</label>
-            <input id="username" placeholder="Username">
-        </div>
-
-        <div>
-            <label for="password">Password (disabled):</label>
-            <input disabled id="password" type="password" value="hello" placeholder="password">
-        </div>
-
-        <p>Placeholder:</p>
-        <div class="placeholder"></div>
-
-        <p>Loader:</p>
-        <div class="spinner"></div>
-
-        <button class="primary" command="show-modal" commandfor="modal-example">View modal</button>
-        <dialog id="modal-example">
-            <h1>hello everyone</h1>
-
-            <div class="options">
-                <button class="destructive" commandfor="modal-example" command="close">Delete account</button>
-                <button class="primary" commandfor="modal-example" command="close">Cancel</button>
+    <div class="card">
+        <p>Examples:</p>
+        <div style="display: flex; flex-direction: column; max-width: 200px; gap: 20px;">
+            <div style="display: flex; flex-direction: column;">
+                <button class="primary">Click me</button>
+                <button class="destructive">Dont click me</button>
+                <button disabled class="destructive">Cant click me</button>
+                <button class="secondary">Maybe click me</button>
             </div>
-        </dialog>
 
 
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-        </label>
+            <select id="picker">
+                <button><selectedcontent></selectedcontent></button>
+                <option>Strawberries</option>
+                <option>Blueberries</option>
+                <option>Apricots</option>
+            </select>
 
-        <table style="width: 500px">
-            <thead>
-                <tr>
-                    <th>Example</th>
-                    <th>Another</th>
-                    <th>Third</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Something</td>
-                    <td>Something 2</td>
-                    <td>Something 3</td>
-                </tr>
-                <tr>
-                    <td>Something</td>
-                    <td>Something 2</td>
-                    <td>Something 3</td>
-                </tr>
-            </tbody>
-        </table>
+            <div>
+                <label for="username">Username:</label>
+                <input id="username" placeholder="Username">
+            </div>
+
+            <div>
+                <label for="password">Password (disabled):</label>
+                <input disabled id="password" type="password" value="hello" placeholder="password">
+            </div>
+
+            <p>Placeholder:</p>
+            <div class="placeholder"></div>
+
+            <p>Loader:</p>
+            <div class="spinner"></div>
+
+            <button class="primary" command="show-modal" commandfor="modal-example">View modal</button>
+            <dialog id="modal-example">
+                <h1>hello everyone</h1>
+                <p>Pretty nice modal isnt it?</p>
+
+                <div class="options">
+                    <button class="destructive" commandfor="modal-example" command="close">Delete account</button>
+                    <button class="primary" commandfor="modal-example" command="close">Cancel</button>
+                </div>
+            </dialog>
+
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+
+            <table style="max-width: 500px">
+                <thead>
+                    <tr>
+                        <th>Example</th>
+                        <th>Another</th>
+                        <th>Third</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Something</td>
+                        <td>Something 2</td>
+                        <td>Something 3</td>
+                    </tr>
+                    <tr>
+                        <td>Something</td>
+                        <td>Something 2</td>
+                        <td>Something 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     
 </body>

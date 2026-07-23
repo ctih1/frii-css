@@ -7,11 +7,13 @@ select {
     padding: 0.5em;
 
     transition: 0.1s background-color;
-}
-
-select {
     width: fit-content;
 }
+
+select:hover {
+    background-color: var(--alt-background);
+}
+
 
 select button {
     display: flex;
@@ -20,6 +22,12 @@ select button {
     padding: 0px;
     margin: 0px;
     font-size: 0.9rem;
+    background-color: transparent;
+    color: white;
+}
+
+select button * {
+    color: white;
 }
 
 select button::after {
@@ -28,9 +36,7 @@ select button::after {
     margin-bottom: 2px;
 }
 
-select:hover {
-    background-color: #bdbdbd;
-}
+
 
 select, ::picker(select) {
     appearance: base-select;
@@ -43,8 +49,8 @@ select::picker-icon {
 option {
     display: flex;
     justify-content: flex-start;
-    background-color: white;
-    color: black;
+    background-color: var(--card-color);
+    
     padding: 10px;
 
     transition: 0.1s ease-in-out background-color;
@@ -55,14 +61,15 @@ option:hover {
 }
 
 option:first-of-type {
-  border-radius: 0.5em 0.5em 0px 0px;
+    border-radius: 0.5em 0.5em 0px 0px;
 }
 
 option:last-of-type {
-  border-radius: 0px 0px 0.5em 0.5em;
+    border-radius: 0px 0px 0.5em 0.5em;
 }
 
 ::picker(select) {
-  border-radius: 0.5em;
-  border: 1px solid #bdbdbd;
+    border-radius: 0.5em;
+    background-color: var(--card-color);
+    border: 1px solid var(--alt-background);
 }

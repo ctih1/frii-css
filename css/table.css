@@ -1,6 +1,6 @@
 table {
     table-layout: fixed;
-    background-color: white;
+    background-color: var(--card-color);
     border-collapse: collapse;
     padding: 1em;
 }

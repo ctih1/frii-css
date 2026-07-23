@@ -6,7 +6,8 @@ button {
     border-radius: .5em;
     transition: transform 50ms;
 
-    color: white;
+    color: var(--text-color);
+    background-color: var(--button-default);
     cursor: pointer;
 }
 
@@ -26,14 +27,16 @@ button:disabled {
 
 button.primary {
     background-color: var(--primary-foreground);
+    color: white;
 }
 
 button.destructive {
     background-color: var(--danger);
+    color: white;
 }
 
 button.secondary {
     background: transparent;
     border: 2px solid var(--primary-foreground);
-    color: black;
+    color: var(--text-color);
 }

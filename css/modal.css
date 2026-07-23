@@ -9,6 +9,8 @@ dialog {
     position: relative;
     max-width: 550px;
     width: 85dvw;
+    position: fixed;
+    background-color: var(--card-color);
 }
 
 dialog .options {

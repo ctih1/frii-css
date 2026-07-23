@@ -2,8 +2,44 @@
     font-family: sans-serif;
 }
 
-:root {
+
+
+html {
     --primary-foreground: rgb(0,123,225);
     --border-color: rgba(0, 0, 0, .05);
     --danger: rgb(230, 15, 0);
+    --background-color: #d8d8d8;
+    --card-color: #ffffff;
+    --light-background: #ffffff;
+    --text-color: black;
+    --alt-background: #bdbdbd;
+    --button-default: #efefef;
+
+    --placeholder-from: #eee;
+    --placeholder-to: #ddd;
+}
+
+html.dark {
+    --primary-foreground: rgb(0,123,255);
+    --background-color: #191919;
+    --card-color: #282828;
+    --light-background: #303030;
+    --text-color: white;
+    --placeholder-from: #1f1f1f;
+    --placeholder-to: #272727;
+    --alt-background: #151515;
+    --button-default: var(--card-color);
+
+    color: white;
+}
+
+body {
+    background-color: var(--background-color);
+    inset: 0px;
+    margin: 0px;
+    margin-bottom: 2em;
+}
+
+* {
+    color: var(--text-color);
 }

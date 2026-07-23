@@ -1,7 +1,7 @@
 .spinner {
     aspect-ratio: 1;
     width: 50px;
-    border: 0.5em solid #bdbdbd;
+    border: 0.5em solid var(--alt-background);
     
     border-top: .5em solid var(--primary-foreground);
     border-radius: 50%;

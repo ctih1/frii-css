@@ -1,9 +1,15 @@
 input {
-    outline-color: var(--primary-foreground);
+    outline: 0px solid transparent;
     border: 2px solid var(--border-color);
     box-sizing: border-box;
     border-radius: 0.5em;
     min-height: 28px;
+    background-color: var(--light-background);
+    color: var(--text-color);
+}
+
+input:focus {
+    outline: 2px solid var(--primary-foreground);
 }
 
 .switch {
@@ -26,7 +32,7 @@ input {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #bdbdbd;;
+    background-color: var(--alt-background);
 }
 
 .slider:before {

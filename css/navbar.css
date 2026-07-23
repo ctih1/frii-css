@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--light-background);
+    min-height: 50px;
+    max-width: 100vw;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+}
+
+nav ul li {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+nav ul li * {
+    color: var(--primary-foreground);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+}
