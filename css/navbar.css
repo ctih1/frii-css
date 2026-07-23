@@ -26,3 +26,32 @@ nav ul li * {
     text-align: center;
     font-weight: 500;
 }
+
+@media (max-width: 600px) {
+    nav ul li {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}
+
+@media(max-width: 500px) {
+    nav ul li * {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 400px) {
+    nav ul li * {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 350px) {
+    nav ul li * {
+        font-size: 18px;
+        margin-bottom: 0.2em;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
